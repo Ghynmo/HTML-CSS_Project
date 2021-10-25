@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav-link:first-child{
+    font-weight: 500;
+}
+
+.banner{
+    background-image: url("/4Html_Project/assets/images/bg-img.png");
+    width: auto;
+    height: 150vh;
+    background-size: cover;
+    align-items: center;
+}
+
+.profile{
+    padding: 100px;
+    width: 100%;
+}
+
+.profile-img {
+    width: 40%;
+    height: 40%;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    margin-right: 35px;
+}
+
+.profile-img img{
+    width: auto;
+    height: 100%;
+}
+
+.profile-text{
+    padding: 0 100px;
+    color: #19345E;
+    align-items: center;
+}
+
+.profile-text p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.profile-text h1{
+    font-size: 85px;
+    font-weight: 700;
+    padding-bottom: 21px;
+}
+
+.profile-text h2{
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 35px;
+}
+
+button{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 25px;
+    color: white;
+    background: #F47522;
+    border-radius: 20px;
+    border-style: none;
+}
