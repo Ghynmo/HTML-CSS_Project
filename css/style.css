@@ -21,15 +21,36 @@
 .profile{
     padding: 100px;
     width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     background-image: url("/4Html_Project/assets/images/bg-img.png");
     background-size: cover;
 }
 
+@media (max-width: 767.98px) {
+    .profile{
+        display: block;
+    }
+
+    .profile-img{
+        width: 20px;
+    }
+
+    .forms{
+        width: 100%;
+        min-width: 200px;
+    }
+
+    .img-banner{
+        display: none;
+    }
+}
+
 .profile-img {
-    width: 40%;
-    min-width: 40%;
+    width: 30vw;
+    max-width: 100%;
+    min-width: 30vw;
     height: 40%;
     overflow: hidden;
     border-radius: 50%;
@@ -42,6 +63,7 @@
 }
 
 .profile-text{
+    max-width: 100%;
     padding: 0 35px;
     color: #19345E;
 }
@@ -99,7 +121,7 @@ button{
 }
 
 .img-banner img{
-    size: 100%;
+    max-width: 100%;
 }
 
 .forms{
@@ -110,7 +132,7 @@ button{
 }
 
 form{
-    width: 70%;
+    width: 80%;
 }
 
 label, input, select, textarea{
