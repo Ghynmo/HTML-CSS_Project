@@ -6,15 +6,11 @@
 }
 
 .nav-link{
-    font-weight: 400;
+    font-weight: 700;
     padding: 0 20px !important;
 }
 
 .link-primary{
-    font-weight: 700;
-}
-
-.link-primary:hover{
     color: #F47522 !important;
 }
 
@@ -24,27 +20,8 @@
     max-width: 100%;
     display: flex;
     align-items: center;
-    background-image: url("/4Html_Project/assets/images/bg-img.png");
+    background-image: url("/assets/images/bg-img.png");
     background-size: cover;
-}
-
-@media (max-width: 767.98px) {
-    .profile{
-        display: block;
-    }
-
-    .profile-img{
-        width: 20px;
-    }
-
-    .forms{
-        width: 100%;
-        min-width: 200px;
-    }
-
-    .img-banner{
-        display: none;
-    }
 }
 
 .profile-img {
@@ -54,7 +31,6 @@
     height: 40%;
     overflow: hidden;
     border-radius: 50%;
-    margin-right: 35px;
 }
 
 .profile-img img{
@@ -63,7 +39,6 @@
 }
 
 .profile-text{
-    max-width: 100%;
     padding: 0 35px;
     color: #19345E;
 }
@@ -104,11 +79,10 @@ button{
 }
 
 .img-banner{
-    background-image: url("/4Html_Project/assets/images/charles-rRWiVQzLm7k-unsplash.jpg");
+    background-image: url("/assets/images/charles-rRWiVQzLm7k-unsplash.jpg");
     background-size: cover;
     height: 100vh;
     width: 35%;
-    position: relative;
 }
 
 .layer {
@@ -148,12 +122,103 @@ label{
     font-size: 20px;
     font-weight: 400;
 }
-
+/* 
 input, select, textarea{
     margin-bottom: 16px;
-}
+} */
 
 form h1{
     font-size: 28px;
     font-weight: 400;
+}
+
+@media (max-width: 767.98px) {
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .profile-img{
+        width: 20px;
+    }
+    
+    .contact-wrap{
+        flex-direction: column;
+    }
+
+    .img-banner{
+        width: 100vw;
+    }
+
+    .forms{
+        margin-top: 30px;
+        width: 100%;
+        min-width: 200px;
+    }
+}
+
+/* --------------------------------------------------- */
+
+.centered-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+    z-index: 1031;
+}
+
+.information{
+    background-color: #fff;
+    height: 80%;
+    width: 60%;
+    max-width: 100%;
+    padding: 20px 40px;
+    margin: auto;
+    border: solid 1px rgb(192, 192, 192);
+    border-radius: 5px;
+}
+
+.information div, .information hr{
+    margin: 20px auto;
+}
+
+.information table{
+    width: 100%;
+}
+
+.information .table_head{
+    width: 30%;
+    font-weight: normal;
+}
+
+.information span{
+    color: black;
+}
+
+.information td p{
+    display: inline;
+}
+
+.information hr{
+    width: 20%;
+}
+
+.information .hi_text{
+    min-height: 150px;
+}
+
+.information .thanks_text{
+    font-size: 20px;
+}
+
+.back-box{
+    height: 30%;
+    background: #EDF6FF;
+}
+
+.img-box{
+    padding-left: 15%;
+    height: 60%;
 }

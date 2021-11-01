@@ -16,29 +16,43 @@
                     <img src="assets/images/logo-ALTA-v2.png" alt="">
                 </div>
             </div>
-            <div class="container forms">
-                <form action="home.html">
+            <div class="forms">
+                <form class="needs-validation" id="form-field" action="review_message.html" novalidate>
                     <h1>Contact Us</h1>
-                    <label for="">Full Name<span>*</span></label>
-                    <input type="text" placeholder="Your Full Name Here..." required>
-                    <label for="">Email Address<span>*</span></label>
-                    <input type="email" placeholder="example@domain.com" required>
-                    <label for="">Phone Number<span>*</span></label>
-                    <input type="tel" required>
-                    <label for="">Nationality</label>
-                    <select name="" id="">
-                        <option value="" selected hidden>Selected</option>
-                        <option value="">Indonesia</option>
-                        <option value="">Japan</option>
-                        <option value="">USA</option>
-                    </select>
-                    <label for="">Message</label>
-                    <textarea name="" id="" rows="5" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
+                    <div class="my-2">
+                        <label for="fullname_input">Full Name<span>*</span></label>
+                        <input id="fullname_input" class="form-control" type="text" name="Full-name" placeholder="Your Full Name Here..." required>
+                        <div class="invalid-feedback">Full name cannot be empty</div>
+                    </div>
+                    <div class="my-2">
+                        <label for="email_input">Email Address<span>*</span></label>
+                        <input id="email_input" class="form-control" type="email" name="Email-address" placeholder="example@domain.com" required>
+                        <div class="invalid-feedback">Email address cannot be empty</div>
+                    </div>
+                    <div class="my-2">
+                        <label for="phone_input">Phone Number<span>*</span></label>
+                        <input id="phone_input" class="form-control" type="tel" name="Phone-number" required>
+                        <div class="invalid-feedback">Phone number cannot be empty</div>
+                    </div>
+                    <div class="my-2">
+                        <label for="nationality_input">Nationality</label>
+                        <select id="nationality_input" name="Nationality" class="form-select">
+                            <option value="" selected hidden>Selected</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Japan">Japan</option>
+                            <option value="USA">USA</option>
+                        </select>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="my-2">
+                        <textarea name="Message" id="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        <button class="my-2" type="submit" onclick="saveValue()">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </body>
 </html>
